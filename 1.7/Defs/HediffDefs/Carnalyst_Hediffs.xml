@@ -1,0 +1,227 @@
+<Defs>
+	<!-- Subdue -->
+	<HediffDef>
+		<defName>VPE_Carnalyst_Domination_Passive_STNL</defName>
+		<label>Corruption</label>
+		<description>Having sex with a creature will steadily increase the target's corruption levels. Once corruption reaches 100%, the target will join the user's faction and have its mind broken.\n\nCorruption increases faster as the initiator's psychic sensitivity increases.</description>
+		<hediffClass>VPE_Carnalyst_STNL.Hediff_DominationPassive</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<minSeverity>0</minSeverity>
+		<maxSeverity>1</maxSeverity>
+		<!-- <lethalSeverity>1</lethalSeverity> -->
+		<defaultLabelColor>(1, 0, 1)</defaultLabelColor>
+		<makesSickThought>false</makesSickThought>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<everCurableByItem>false</everCurableByItem>
+		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+		<modExtensions/>
+		<stages>
+			<li>
+				<!-- <statFactors> -->
+				<!-- <IncomingDamageFactor>1.5</IncomingDamageFactor> -->
+				<!-- </statFactors> -->
+			</li>
+		</stages>
+		<comps>
+			<!-- <li Class="HediffCompProperties_DisappearsOnDeath"/> -->
+			<!-- <li Class="HediffCompProperties_Disappears"> -->
+			<!-- <disappearsAfterTicks>20000</disappearsAfterTicks> -->
+			<!-- <showRemainingTime>true</showRemainingTime> -->
+			<!-- </li> -->
+		</comps>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>VPE_Carnalyst_Corruption_Hediff_STNL</defName>
+		<label>Corruption</label>
+		<description>This creature's mind is being invaded by a Carnalyst, reaching 100% corruption will cause this creature to fall for the caster and join their faction.</description>
+		<hediffClass>VPE_Carnalyst_STNL.Hediff_Corruption</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<minSeverity>0</minSeverity>
+		<maxSeverity>1</maxSeverity>
+		<!-- <lethalSeverity>1</lethalSeverity> -->
+		<defaultLabelColor>(1, 0, 1)</defaultLabelColor>
+		<makesSickThought>false</makesSickThought>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>true</isBad>
+		<everCurableByItem>false</everCurableByItem>
+		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+		<modExtensions/>
+		<stages>
+			<li>
+				<!-- <statFactors> -->
+				<!-- <IncomingDamageFactor>1.5</IncomingDamageFactor> -->
+				<!-- </statFactors> -->
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>30000</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<!-- Carnal engine -->
+	<HediffDef>
+		<defName>VPE_Carnalyst_CarnalEngine_Passive_STNL</defName>
+		<label>Carnal engine</label>
+		<description>This creature's psychic sensitivity will increase the lower its sex need is.</description>
+		<hediffClass>VPE_Carnalyst_STNL.Hediff_CarnalEngine</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<minSeverity>0</minSeverity>
+		<maxSeverity>1</maxSeverity>
+		<!-- <lethalSeverity>1</lethalSeverity> -->
+		<defaultLabelColor>(1, 0, 1)</defaultLabelColor>
+		<makesSickThought>false</makesSickThought>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<everCurableByItem>false</everCurableByItem>
+		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+		<modExtensions/>
+		<stages>
+			<li>
+				<!-- <statFactors> -->
+				<!-- <IncomingDamageFactor>1.5</IncomingDamageFactor> -->
+				<!-- </statFactors> -->
+			</li>
+		</stages>
+		<comps>
+			<!-- <li Class="HediffCompProperties_DisappearsOnDeath"/> -->
+			<!-- <li Class="HediffCompProperties_Disappears"> -->
+			<!-- <disappearsAfterTicks>20000</disappearsAfterTicks> -->
+			<!-- <showRemainingTime>true</showRemainingTime> -->
+			<!-- </li> -->
+		</comps>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>VPE_Carnalyst_RaiseFertility_Hediff_STNL</defName>
+		<label>Increased fertility</label>
+		<description>This creature's reproductive organs and submissive tendencies are being tempered with by a psychic phenomenon. It will be much more fertile and submissive during this time.</description>
+		<hediffClass>VPE_Carnalyst_STNL.Hediff_RaiseFertility</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<minSeverity>0</minSeverity>
+		<maxSeverity>1</maxSeverity>
+		<!-- <lethalSeverity>1</lethalSeverity> -->
+		<defaultLabelColor>(1, 0, 1)</defaultLabelColor>
+		<makesSickThought>false</makesSickThought>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<everCurableByItem>false</everCurableByItem>
+		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+		<modExtensions/>
+		<stages>
+			<li>
+				<!-- <statFactors> -->
+				<!-- <IncomingDamageFactor>1.5</IncomingDamageFactor> -->
+				<!-- </statFactors> -->
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>900000</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>VPE_Carnalyst_AssaultSkip_Passive_STNL</defName>
+		<label>Active assault</label>
+		<description>This Carnalyst is emitting a mind numbing pulse to incapacitate nearby enemy creatures.\n\nEnding sexual activities will end this phenomenon.</description>
+		<hediffClass>VPE_Carnalyst_STNL.Hediff_ActiveAssault</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<minSeverity>0</minSeverity>
+		<maxSeverity>1</maxSeverity>
+		<!-- <lethalSeverity>1</lethalSeverity> -->
+		<defaultLabelColor>(1, 0, 1)</defaultLabelColor>
+		<makesSickThought>false</makesSickThought>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<everCurableByItem>false</everCurableByItem>
+		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+		<modExtensions/>
+		<stages>
+			<li>
+				<!-- <statFactors> -->
+				<!-- <IncomingDamageFactor>1.5</IncomingDamageFactor> -->
+				<!-- </statFactors> -->
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<!-- <li Class="HediffCompProperties_Disappears"> -->
+			<!-- <disappearsAfterTicks>20000</disappearsAfterTicks> -->
+			<!-- <showRemainingTime>true</showRemainingTime> -->
+			<!-- </li> -->
+		</comps>
+	</HediffDef>
+	
+		<HediffDef>
+		<defName>VPE_Carnalyst_Carnthrall_Hediff_STNL</defName>
+		<label>Carnthrall</label>
+		<description>This creature is under a Carnalyst's control. Its beauty and social skill levels will depend on their owner's psychic sensitivity.</description>
+		<hediffClass>VPE_Carnalyst_STNL.Hediff_Carnthrall</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<minSeverity>0</minSeverity>
+		<maxSeverity>1</maxSeverity>
+		<!-- <lethalSeverity>1</lethalSeverity> -->
+		<defaultLabelColor>(1, 0, 1)</defaultLabelColor>
+		<makesSickThought>false</makesSickThought>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<everCurableByItem>false</everCurableByItem>
+		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+		<modExtensions/>
+		<stages>
+			<li>
+				<!-- <statFactors> -->
+				<!-- <IncomingDamageFactor>1.5</IncomingDamageFactor> -->
+				<!-- </statFactors> -->
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<!-- <li Class="HediffCompProperties_Disappears"> -->
+			<!-- <disappearsAfterTicks>20000</disappearsAfterTicks> -->
+			<!-- <showRemainingTime>true</showRemainingTime> -->
+			<!-- </li> -->
+		</comps>
+	</HediffDef>
+	
+			<HediffDef>
+		<defName>VPE_Carnalyst_Carnthrall_Owner_Hediff_STNL</defName>
+		<label>Carnthrall owner</label>
+		<description>This Carnalyst is mind-controlling another creature, forcing it into a relationship with them, their Carnthrall's beauty and social skill levels will scale with Carnalyst's psychic sensitivity.</description>
+		<hediffClass>VPE_Carnalyst_STNL.Hediff_CarnthrallOwner</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<minSeverity>0</minSeverity>
+		<maxSeverity>1</maxSeverity>
+		<!-- <lethalSeverity>1</lethalSeverity> -->
+		<defaultLabelColor>(1, 0, 1)</defaultLabelColor>
+		<makesSickThought>false</makesSickThought>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<everCurableByItem>false</everCurableByItem>
+		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+		<modExtensions/>
+		<stages>
+			<li>
+				<!-- <statFactors> -->
+				<!-- <IncomingDamageFactor>1.5</IncomingDamageFactor> -->
+				<!-- </statFactors> -->
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<!-- <li Class="HediffCompProperties_Disappears"> -->
+			<!-- <disappearsAfterTicks>20000</disappearsAfterTicks> -->
+			<!-- <showRemainingTime>true</showRemainingTime> -->
+			<!-- </li> -->
+		</comps>
+	</HediffDef>
+</Defs>

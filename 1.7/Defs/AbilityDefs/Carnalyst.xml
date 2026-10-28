@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!-- Level 1 -->
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_Carnalyst_GenitalDetonation_Ability_STNL</defName>
+		<label>Genital detonation</label>
+		<description>Forcefully cause a localized collapse of reality centered around the target creature's genitals, resulting in a detonation that will destroy the target genitals and damage nearby creatures. The size and damage of the explosion is determined by the size of the destroyed genitals.</description>
+		<iconPath>UI_Carnalyst_STNL/Abilities/Ability_GenitalDetonation</iconPath>
+		<abilityClass>VPE_Carnalyst_STNL.Ability_GenitalDetonation</abilityClass>
+		<castSound>Psycast_Skip_Entry</castSound>
+		<castTime>30</castTime>
+		<targetMode>Pawn</targetMode>
+		<targetingParameters>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetMechs>true</canTargetMechs>
+			<!-- <canTargetItems>false</canTargetItems> -->
+			<!-- <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable> -->
+		</targetingParameters>
+		<!-- <chance>0</chance> -->
+		<!-- <jobDef>VFEA_GotoTargetAndUseAbility</jobDef> -->
+		<!-- <requireLineOfSight>false</requireLineOfSight> -->
+		<showUndrafted>True</showUndrafted>
+		<distanceToTarget>1.9</distanceToTarget>
+		<range>30.9</range>
+		<radius>0</radius>
+		<needsTicking>true</needsTicking>
+		<goodwillImpact>0</goodwillImpact>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_Carnalyst_STNL</path>
+				<level>1</level>
+				<order>2</order>
+				<psyfocusCost>0.03</psyfocusCost>
+				<entropyGain>40</entropyGain>
+				<!-- <prerequisites> -->
+				<!-- <li>VPE_Neurophage_NeuralScramble_STNL</li> -->
+				<!-- </prerequisites> -->
+			</li>
+			<!-- <li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget"> -->
+			<!-- <effecterDef>VPE_Acolyte_SignumCrucisSTNL</effecterDef> -->
+			<!-- <onCaster>true</onCaster> -->
+			<!-- <maintainForDuration>true</maintainForDuration> -->
+			<!-- <maintainForTicks>5</maintainForTicks> -->
+			<!-- </li> -->
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_Carnalyst_CarnalEngine_Ability_STNL</defName>
+		<label>Carnal engine</label>
+		<description>Passive upgrade: Unlocking this ability will automatically apply its effects.\n\nThe user's psionic prowess now resonates with their hunger for intimacy, their psychic sensitivity now increases the lower their sex need is.</description>
+		<iconPath>UI_Carnalyst_STNL/Abilities/Ability_CarnalEngine</iconPath>
+		<abilityClass>SentinelFramework_STNL.Ability_PassiveGiver</abilityClass>
+		<castSound>Psycast_Skip_Entry</castSound>
+		<castTime>90</castTime>
+		<targetMode>Pawn</targetMode>
+		<targetingParameters>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetMechs>true</canTargetMechs>
+			<canTargetItems>true</canTargetItems>
+			<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
+		</targetingParameters>
+		<chance>0</chance>
+		<jobDef>VFEA_GotoTargetAndUseAbility</jobDef>
+		<requireLineOfSight>false</requireLineOfSight>
+		<showUndrafted>True</showUndrafted>
+		<distanceToTarget>1.9</distanceToTarget>
+		<range>999999</range>
+		<radius>0</radius>
+		<needsTicking>true</needsTicking>
+		<goodwillImpact>0</goodwillImpact>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_Carnalyst_STNL</path>
+				<level>1</level>
+				<order>2</order>
+				<psyfocusCost>0.07</psyfocusCost>
+				<entropyGain>30</entropyGain>
+				<!-- <prerequisites> -->
+				<!-- <li>VPE_Neurophage_NeuralScramble_STNL</li> -->
+				<!-- </prerequisites> -->
+			</li>
+			<li Class="SentinelFramework_STNL.Ability_PassiveModExt">
+				<hediffsToAdd>
+					<li>VPE_Carnalyst_CarnalEngine_Passive_STNL</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	
+	<!-- Level 2 -->
+	
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_Carnalyst_RaiseVulnerability_Ability_STNL</defName>
+		<label>Raise fertility</label>
+		<description>Psychically overdrive the target's reproductive organs to greatly increase its fertility, additionally forces the target to begin lactating if it is a humanlike female.\n\nTargets affected by this condition are also much more vulnerable to sexual advances. \n\nConsidered a hostile action if seen by others, knocking out the target will prevent it from reporting this action.</description>
+		<iconPath>UI_Carnalyst_STNL/Abilities/Ability_RaiseFertility</iconPath>
+		<abilityClass>VPE_Carnalyst_STNL.Ability_RaiseFertility</abilityClass>
+		<durationTime>900000</durationTime>
+		<castSound>Psycast_Skip_Entry</castSound>
+		<castTime>90</castTime>
+		<targetMode>Pawn</targetMode>
+		<targetingParameters>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetMechs>true</canTargetMechs>
+			<!-- <canTargetItems>true</canTargetItems> -->
+			<!-- <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable> -->
+		</targetingParameters>
+		<chance>0</chance>
+		<jobDef>VFEA_GotoTargetAndUseAbility</jobDef>
+		<requireLineOfSight>false</requireLineOfSight>
+		<showUndrafted>True</showUndrafted>
+		<distanceToTarget>1.9</distanceToTarget>
+		<range>999999</range>
+		<radius>0</radius>
+		<needsTicking>true</needsTicking>
+		<goodwillImpact>0</goodwillImpact>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_Carnalyst_STNL</path>
+				<level>2</level>
+				<order>1</order>
+				<psyfocusCost>0.20</psyfocusCost>
+				<entropyGain>0</entropyGain>
+				<prerequisites>
+					<li>VPE_Carnalyst_GenitalDetonation_Ability_STNL</li>
+				</prerequisites>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_Carnalyst_LustFocus_Ability_STNL</defName>
+		<label>Lust focus</label>
+		<description>Drain the caster's sex need to restore their missing psyfocus, this ability will only partially refill the user's psyfocus if their sex need levels are insufficient.</description>
+		<iconPath>UI_Carnalyst_STNL/Abilities/Ability_LustFocus</iconPath>
+		<abilityClass>VPE_Carnalyst_STNL.Ability_LustFocus</abilityClass>
+		<castSound>Psycast_Skip_Entry</castSound>
+		<castTime>90</castTime>
+		<targetMode>Self</targetMode>
+		<targetingParameters>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetMechs>true</canTargetMechs>
+			<!-- <canTargetItems>true</canTargetItems> -->
+			<!-- <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable> -->
+		</targetingParameters>
+		<chance>0</chance>
+		<!-- <jobDef>VFEA_GotoTargetAndUseAbility</jobDef> -->
+		<!-- <requireLineOfSight>false</requireLineOfSight> -->
+		<!-- <showUndrafted>True</showUndrafted> -->
+		<!-- <distanceToTarget>1.9</distanceToTarget> -->
+		<range>0</range>
+		<radius>0</radius>
+		<needsTicking>true</needsTicking>
+		<goodwillImpact>0</goodwillImpact>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_Carnalyst_STNL</path>
+				<level>2</level>
+				<order>1</order>
+				<psyfocusCost>0</psyfocusCost>
+				<entropyGain>50</entropyGain>
+				<prerequisites>
+					<li>VPE_Carnalyst_CarnalEngine_Ability_STNL</li>
+				</prerequisites>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	
+	<!-- Level 3 -->
+	
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_Carnalyst_InvertGender_Ability_STNL</defName>
+		<label>Invert gender</label>
+		<description>Alter the target creature's DNA and physical parts to force it into becoming the opposite of its current gender.\n\nArtificial genitals will be expulsed to make room for natural ones instead.\n\nConsidered a hostile action if seen by the target's faction. Knocking out the target will prevent it from reporting this action.</description>
+		<iconPath>UI_Carnalyst_STNL/Abilities/Ability_InvertGender</iconPath>
+		<abilityClass>VPE_Carnalyst_STNL.Ability_InvertGender</abilityClass>
+		<castSound>Psycast_Skip_Entry</castSound>
+		<castTime>30</castTime>
+		<targetMode>Pawn</targetMode>
+		<targetingParameters>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetMechs>true</canTargetMechs>
+			<!-- <canTargetItems>false</canTargetItems> -->
+			<!-- <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable> -->
+		</targetingParameters>
+		<chance>1</chance>
+		<jobDef>VFEA_GotoTargetAndUseAbility</jobDef>
+		<requireLineOfSight>false</requireLineOfSight>
+		<showUndrafted>True</showUndrafted>
+		<distanceToTarget>1.9</distanceToTarget>
+		<range>30.9</range>
+		<radius>0</radius>
+		<needsTicking>true</needsTicking>
+		<goodwillImpact>0</goodwillImpact>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_Carnalyst_STNL</path>
+				<level>3</level>
+				<order>1</order>
+				<psyfocusCost>0.40</psyfocusCost>
+				<entropyGain>0</entropyGain>
+				<prerequisites>
+					<li>VPE_Carnalyst_RaiseVulnerability_Ability_STNL</li>
+				</prerequisites>
+			</li>
+			<!-- <li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget"> -->
+			<!-- <effecterDef>VPE_Acolyte_SignumCrucisSTNL</effecterDef> -->
+			<!-- <onCaster>true</onCaster> -->
+			<!-- <maintainForDuration>true</maintainForDuration> -->
+			<!-- <maintainForTicks>5</maintainForTicks> -->
+			<!-- </li> -->
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_Carnalyst_RapeSkip_Ability_STNL</defName>
+		<label>Assault skip</label>
+		<description>Skip the caster onto the target and have them force themselves onto the target creature to keep it from moving. Considered a horrible action if seen by others. Knocked out targets cannot report this action.</description>
+		<iconPath>UI_Carnalyst_STNL/Abilities/Ability_AssaultSkip</iconPath>
+		<abilityClass>VPE_Carnalyst_STNL.Ability_RapeSkip</abilityClass>
+		<castSound>Psycast_Skip_Entry</castSound>
+		<castTime>30</castTime>
+		<targetMode>Pawn</targetMode>
+		<targetingParameters>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetSelf>false</canTargetSelf>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetMechs>true</canTargetMechs>
+			<!-- <canTargetItems>false</canTargetItems> -->
+			<!-- <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable> -->
+		</targetingParameters>
+		<chance>0</chance>
+		<!-- <jobDef>VFEA_GotoTargetAndUseAbility</jobDef> -->
+		<!-- <requireLineOfSight>false</requireLineOfSight> -->
+		<!-- <showUndrafted>True</showUndrafted> -->
+		<distanceToTarget>1.9</distanceToTarget>
+		<range>30.9</range>
+		<radius>0</radius>
+		<needsTicking>true</needsTicking>
+		<goodwillImpact>0</goodwillImpact>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_Carnalyst_STNL</path>
+				<level>3</level>
+				<order>3</order>
+				<psyfocusCost>0.10</psyfocusCost>
+				<entropyGain>70</entropyGain>
+				<prerequisites>
+					<li>VPE_Carnalyst_LustFocus_Ability_STNL</li>
+				</prerequisites>
+			</li>
+			<!-- <li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget"> -->
+			<!-- <effecterDef>VPE_Acolyte_SignumCrucisSTNL</effecterDef> -->
+			<!-- <onCaster>true</onCaster> -->
+			<!-- <maintainForDuration>true</maintainForDuration> -->
+			<!-- <maintainForTicks>5</maintainForTicks> -->
+			<!-- </li> -->
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	
+	<!-- Level 4 -->
+	
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_Carnalyst_Carnthrall_Ability_STNL</defName>
+		<label>Carnthrall</label>
+		<description>Induce a strong feeling of love towards the caster into the target creature's mind, forcing them into a relationship and converting them to the caster's ideology and faction. The victim will forget everything about its previous lovers should it have any.\n\nCarnthralls gain increased beauty and social skill levels based on their owner's psychic sensitivity.\n\nOnly one Carnthrall can exist at a time for the caster, letting go of a Carnthrall will restore their previous allegiances.\n\nConsidered a hostile action if seen by others, the target cannot report this action.</description>
+		<iconPath>UI_Carnalyst_STNL/Abilities/Ability_Carnthrall</iconPath>
+		<abilityClass>VPE_Carnalyst_STNL.Ability_Carnthrall</abilityClass>
+		<castSound>Psycast_Skip_Entry</castSound>
+		<castTime>30</castTime>
+		<targetMode>Pawn</targetMode>
+		<targetingParameters>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetSelf>false</canTargetSelf>
+			<canTargetAnimals>false</canTargetAnimals>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetMechs>false</canTargetMechs>
+			<!-- <canTargetItems>false</canTargetItems> -->
+			<!-- <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable> -->
+		</targetingParameters>
+		<chance>0</chance>
+		<!-- <jobDef>VFEA_GotoTargetAndUseAbility</jobDef> -->
+		<!-- <requireLineOfSight>false</requireLineOfSight> -->
+		<!-- <showUndrafted>True</showUndrafted> -->
+		<distanceToTarget>1.9</distanceToTarget>
+		<range>30.9</range>
+		<radius>0</radius>
+		<needsTicking>true</needsTicking>
+		<goodwillImpact>0</goodwillImpact>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_Carnalyst_STNL</path>
+				<level>4</level>
+				<order>1</order>
+				<psyfocusCost>0.60</psyfocusCost>
+				<entropyGain>0</entropyGain>
+				<prerequisites>
+					<li>VPE_Carnalyst_InvertGender_Ability_STNL</li>
+				</prerequisites>
+			</li>
+			<!-- <li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget"> -->
+			<!-- <effecterDef>VPE_Acolyte_SignumCrucisSTNL</effecterDef> -->
+			<!-- <onCaster>true</onCaster> -->
+			<!-- <maintainForDuration>true</maintainForDuration> -->
+			<!-- <maintainForTicks>5</maintainForTicks> -->
+			<!-- </li> -->
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_Carnalyst_AssaultSkip_Upgrade_Ability_STNL</defName>
+		<label>Upgrade: Assault skip</label>
+		<description>Ability Augment: Assault skip now periodically emits a neural pulse that will force every nearby hostile or factionless creature to submit themselves. Ending sexual activities will stop the pulses. The radius of these pulses scales with the caster's psychic sensitivity.</description>
+		<iconPath>UI_Carnalyst_STNL/Abilities/Ability_AssaultSkipUpgrade</iconPath>
+		<abilityClass>SentinelFramework_STNL.Ability_PassiveGiver</abilityClass>
+		<castSound>Psycast_Skip_Entry</castSound>
+		<castTime>30</castTime>
+		<targetMode>Pawn</targetMode>
+		<targetingParameters>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetMechs>true</canTargetMechs>
+			<!-- <canTargetItems>false</canTargetItems> -->
+			<!-- <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable> -->
+		</targetingParameters>
+		<chance>1</chance>
+		<!-- <jobDef>VFEA_GotoTargetAndUseAbility</jobDef> -->
+		<!-- <requireLineOfSight>false</requireLineOfSight> -->
+		<showUndrafted>True</showUndrafted>
+		<distanceToTarget>1.9</distanceToTarget>
+		<range>30.9</range>
+		<radius>0</radius>
+		<needsTicking>true</needsTicking>
+		<goodwillImpact>0</goodwillImpact>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_Carnalyst_STNL</path>
+				<level>4</level>
+				<order>3</order>
+				<psyfocusCost>0.07</psyfocusCost>
+				<entropyGain>30</entropyGain>
+				<prerequisites>
+					<li>VPE_Carnalyst_RapeSkip_Ability_STNL</li>
+				</prerequisites>
+			</li>
+			<li Class="SentinelFramework_STNL.Ability_PassiveModExt">
+				<hediffsToAdd/>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	
+	<!-- Level 5 -->
+	
+		<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPE_Carnalyst_Subdue_Ability_STNL</defName>
+		<label>Corruption</label>
+		<description>Engaging in sexual activities with a creature who does not belong to the user's faction will steadily inflict corruption upon it. Once corruption reaches 100%, the creature's mind will break, causing it to join the user's faction.\n\nEvolution: Carnaleech\nEvolution requirement: User's psychic sensitivity exceeds 300%\nEvolution effect: Allows the user to drain all but the target's sex need to fill their own.</description>
+		<iconPath>UI_Carnalyst_STNL/Abilities/Ability_Corruption</iconPath>
+		<abilityClass>SentinelFramework_STNL.Ability_PassiveGiver</abilityClass>
+		<castSound>Psycast_Skip_Entry</castSound>
+		<castTime>90</castTime>
+		<targetMode>Pawn</targetMode>
+		<targetingParameters>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetMechs>true</canTargetMechs>
+			<canTargetItems>true</canTargetItems>
+			<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
+		</targetingParameters>
+		<chance>0</chance>
+		<jobDef>VFEA_GotoTargetAndUseAbility</jobDef>
+		<requireLineOfSight>false</requireLineOfSight>
+		<!-- <showUndrafted>True</showUndrafted> -->
+		<distanceToTarget>1.9</distanceToTarget>
+		<range>999999</range>
+		<radius>0</radius>
+		<needsTicking>true</needsTicking>
+		<goodwillImpact>0</goodwillImpact>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_Carnalyst_STNL</path>
+				<level>3</level>
+				<order>2</order>
+				<psyfocusCost>0.07</psyfocusCost>
+				<entropyGain>30</entropyGain>
+				<prerequisites>
+					<li>VPE_Carnalyst_Carnthrall_Ability_STNL</li>
+					<li>VPE_Carnalyst_AssaultSkip_Upgrade_Ability_STNL</li>
+				</prerequisites>
+			</li>
+			<li Class="SentinelFramework_STNL.Ability_PassiveModExt">
+				<hediffsToAdd>
+					<li>VPE_Carnalyst_Domination_Passive_STNL</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+</Defs>

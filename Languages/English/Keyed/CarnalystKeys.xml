@@ -1,0 +1,12 @@
+<LanguageData>
+	<!-- Safety -->
+	<VPE_Carnalyst_Refusal_TargetTooYoung_STNL>Target isn't mature.</VPE_Carnalyst_Refusal_TargetTooYoung_STNL>
+	<!-- Genital detonation -->
+	<VPE_Carnalyst_GenitalDetonation_NoGenitals_STNL>This target doesn't have any genitals.</VPE_Carnalyst_GenitalDetonation_NoGenitals_STNL>
+	<!-- Carnthrall -->
+	<VPE_Carnalyst_Carnthrall_Release_STNL>Release {0}</VPE_Carnalyst_Carnthrall_Release_STNL>
+	<!-- Corruption -->
+	<VPE_Carnalyst_Corruption_Desc_STNL>If active, sexual activities will corrupt the target over time, causing the target to join the Carnalyst's faction once corruption reaches 100%.</VPE_Carnalyst_Corruption_Desc_STNL>
+	<VPE_Carnalyst_Carnaleech_STNL>Carnaleech</VPE_Carnalyst_Carnaleech_STNL>
+	<VPE_Carnalyst_Carnaleech_Desc_STNL>If active, intimate activites will cause this Carnalyst to drain the target's needs until their own have been satiated.</VPE_Carnalyst_Carnaleech_Desc_STNL>
+</LanguageData>

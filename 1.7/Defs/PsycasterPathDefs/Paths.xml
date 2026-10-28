@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- Carnalyst -->
+
+<VanillaPsycastsExpanded.PsycasterPathDef>
+	<defName>VPE_Carnalyst_STNL</defName>
+	<label>Carnalyst</label>
+	<description>Carnalysts invade the mind of others to subdue their targets, they additionally possess the ability to alter the bodies of other creatures to fit their whims.</description>
+	<background>UI_Carnalyst_STNL/CarnalystTreeBase</background>
+	<altBackground>UI_Carnalyst_STNL/CarnalystTreeBase</altBackground>
+	<tab>Misc</tab>
+	<tooltip>Carnalysts invade the mind of others to subdue their targets, they additionally possess the ability to alter the bodies of other creatures to fit their whims.</tooltip>
+</VanillaPsycastsExpanded.PsycasterPathDef>
+
+</Defs>
