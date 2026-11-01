@@ -196,7 +196,7 @@
 			<HediffDef>
 		<defName>VPE_Carnalyst_Carnthrall_Owner_Hediff_STNL</defName>
 		<label>Carnthrall owner</label>
-		<description>This Carnalyst is mind-controlling another creature, forcing it into a relationship with them, their Carnthrall's beauty and social skill levels will scale with Carnalyst's psychic sensitivity.</description>
+		<description>This Carnalyst is mind-controlling another creature, forcing it into a relationship with them, their Carnthrall's beauty and social skill levels will scale with this Carnalyst's psychic sensitivity.</description>
 		<hediffClass>VPE_Carnalyst_STNL.Hediff_CarnthrallOwner</hediffClass>
 		<initialSeverity>1</initialSeverity>
 		<minSeverity>0</minSeverity>

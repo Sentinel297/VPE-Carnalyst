@@ -163,7 +163,7 @@
 		<chance>0</chance>
 		<!-- <jobDef>VFEA_GotoTargetAndUseAbility</jobDef> -->
 		<!-- <requireLineOfSight>false</requireLineOfSight> -->
-		<!-- <showUndrafted>True</showUndrafted> -->
+		<showUndrafted>True</showUndrafted>
 		<!-- <distanceToTarget>1.9</distanceToTarget> -->
 		<range>0</range>
 		<radius>0</radius>
@@ -204,7 +204,7 @@
 			<!-- <canTargetItems>false</canTargetItems> -->
 			<!-- <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable> -->
 		</targetingParameters>
-		<chance>1</chance>
+		<!-- <chance>0</chance> -->
 		<jobDef>VFEA_GotoTargetAndUseAbility</jobDef>
 		<requireLineOfSight>false</requireLineOfSight>
 		<showUndrafted>True</showUndrafted>
@@ -350,7 +350,7 @@
 			<!-- <canTargetItems>false</canTargetItems> -->
 			<!-- <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable> -->
 		</targetingParameters>
-		<chance>1</chance>
+		<!-- <chance>0</chance> -->
 		<!-- <jobDef>VFEA_GotoTargetAndUseAbility</jobDef> -->
 		<!-- <requireLineOfSight>false</requireLineOfSight> -->
 		<showUndrafted>True</showUndrafted>
